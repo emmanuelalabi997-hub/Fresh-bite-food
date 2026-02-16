@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "name": "fresh-bite-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+  
+  "dev": "npx @tailwindcss/cli -i input.css -o output.css --watch",
+  "build": "npx @tailwindcss/cli -i input.css -o output.css",
+  "test": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelalabi997-hub/Fresh-bite-food.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelalabi997-hub/Fresh-bite-food/issues"
+  },
+  "homepage": "https://github.com/emmanuelalabi997-hub/Fresh-bite-food#readme"
+}
+
+
