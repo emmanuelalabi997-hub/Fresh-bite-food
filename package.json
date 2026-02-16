@@ -10,9 +10,9 @@
   "devDependencies": {},
   "scripts": {
   
-  "dev": "npx @tailwindcss/cli -i input.css -o output.css --watch",
-  "build": "npx @tailwindcss/cli -i input.css -o output.css",
-  "test": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  "dev": "npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css --watch",
+  "build": "npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css",
+  "test": "npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css --watch"
   
 
   },
