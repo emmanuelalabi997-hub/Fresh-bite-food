@@ -12,73 +12,118 @@
     transition: all 0.1s ease-in-out;
   }
 </style>
-<body class="bg-[#F6F1E8] px-4">
-  <header>
+<body class="bg-[#F6F1E8] px-4 lg:px-10">
+  <header class=" lg:flex lg:flex-col lg:justify-evenly">
     <!-- mobile view -->
-    <nav class="  w-full h-20 flex items-center  lg:hidden md:hidden sm:hidden ">
-      <i class="text-[#2B2B2B] fa-solid fa-bars text-4xl cursor-pointer"></i>
+    <nav class="  w-full h-20 flex items-center lg:flex-row lg:justify-between">
+      <div class="lg:hidden">
+      <i class="text-[#2B2B2B] fa-solid fa-bars text-4xl cursor-pointer "></i>
+      </div>
       <section class=" h-16">
-      <p class="text-[#2B2B2B] font-bold text-3xl ml-4 font-[Playfair_Display]">Fresh-Bite</p>
-      <p class="text-[#2B2B2B] ml-4 font-[Playfair_Display]">One Place, All Tastes.</p>
+      <p class="text-[#2B2B2B] font-bold text-3xl ml-4 font-[Playfair_Display] lg:text-5xl">Fresh-Bite</p>
+      <p class="text-[#2B2B2B] ml-4 font-[Playfair_Display] lg:text-xl">One Place, All Tastes.</p>
       </section>
-    </nav>
-    <!--// mobile view -->
+      <!--// mobile view -->
 
-    <section class=" max-w-full h-64 flex flex-col justify-between  ">
-      <img src="image/roast-chicken.avif" alt="" class=" w-full">
-      
-      <p class="text-[#2B2B2B] font-[Playfair_Display] text-center font-black">
+      <!-- laptop view -->
+      <section class="hidden lg:flex lg:w-[600px] lg:h-20  lg:flex-row lg:justify-between lg:pr-36 lg:items-center">
+
+        <h1 class="text-2xl font-semibold text-[#2B2B2B] cursor-pointer ">Home</h1>
+        <h1 class="text-2xl font-semibold text-[#2B2B2B] cursor-pointer ">About</h1>
+        <h1 class="text-2xl font-semibold text-[#2B2B2B] cursor-pointer ">Menu</h1>
+
+      </section>
+      <!--// laptop view -->
+    </nav>
+  
+    <section class=" max-w-full flex flex-col justify-between ">
+      <div><img src="image/roast-chicken.avif" alt="" class="w-full lg:h-[630px] rounded-xl "></div>
+   
+      <br>
+      <p class="text-[#2B2B2B] font-[Playfair_Display] text-center md:text-xl  lg:text-xl font-black text-[13px]">
         Signature Roast Chicken - Farm fresh herbs</p>
 
+        <br>
       <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
     </section>
   </header>
 
   <!-- main content -->
-  <main class="py-2.5">
-    <p class="text-center text-3xl underline font-[Playfair_Display]">MENU</p>
+  <main class="py-2.5 ">
+    <p class="text-center lg:text-6xl underline font-[Playfair_Display] text-3xl">MENU</p>
     <section class="mt-2 flex flex-col">
       <div class="flex flex-row justify-between">
-      <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-2xl">Main</h1>
-      <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-2xl">snacks</h1>
-      <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-2xl">Drinks</h1>
+        <div class=" w-[400px]">
+      <h1 class="text-[#2B2B2B] font-[Playfair_Display] lg:text-5xl text-center text-2xl">Main</h1>
+      </div>
+       <div class=" w-[400px] ">
+      <h1 class="text-[#2B2B2B] font-[Playfair_Display] lg:text-5xl text-center text-2xl">snacks</h1>
+      </div>
+      <div class=" w-[400px]">
+      <h1 class="text-[#2B2B2B] font-[Playfair_Display] lg:text-5xl text-center text-2xl">Drinks</h1>
+      </div>
       </div>
 
       <div class="py-3 flex flex-row justify-between">
 
-       <article class="flex flex-col min-h-24 max-w-28 justify-between 
-        rounded-xl cursor-pointer active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2">
-        <img src="image/roast-chicken.avif" alt="Roast Chicken" class="min-h-16">
-        <h2 class="text-[#2B2B2B] font-sans text-center ">Roasted Chicken</h2>
-        <h1 class="text-center text-2xl">N 8,000</h1>
+       <article class=" flex flex-col min-h-24 w-28 justify-evenly rounded-xl cursor-pointer
+         hover:bg-[#F6F1E8] hover:shadow-2xl active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2 hover:underline
+          lg:w-[420px] lg:h-[450px]  md:w-80 md:h-[450px] ">
+        <img src="image/roast-chicken.avif" alt="Roast Chicken" class="min-h-16 rounded-2xl
+          lg:h-60 md:h-52">
+        <div class="h-16 flex flex-col justify-center">
+          <h2 class="text-[#2B2B2B] font-sans text-center 
+          lg:text-3xl md:text-2xl"> 
+          Roasted Chicken</h2></div>
+        <h1 class="text-center text-xl 
+        lg:text-2xl">N 8,000</h1>
       </article>
 
-      <article class="flex flex-col min-h-24 max-w-28 justify-between
-      rounded-xl cursor-pointer active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2">
-        <img src="image/chops.png" alt="Roast Chicken" class="min-h-16">
-        <h2 class="text-[#2B2B2B] font-sans text-center">small chops</h2>
-        <h1 class="text-center text-2xl ">N 2,000</h1>
+      <article class=" flex flex-col min-h-24 w-28 justify-evenly   hover:bg-[#F6F1E8] hover:shadow-2xl
+      rounded-xl cursor-pointer active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2 hover:underline
+      lg:w-[420px] lg:h-[450px] md:w-80 md:h-[450px]">
+        <img src="image/chops.png" alt="Roast Chicken" class="min-h-16 rounded-2xl
+        lg:h-60 md:h-52">
+        <div class="h-16  flex flex-col justify-center">
+          <h2 class="text-[#2B2B2B] font-sans text-center 
+          lg:text-3xl md:text-2xl ">
+            Small chops</h2></div>
+        <h1 class="text-center text-xl lg:text-2xl ">N 2,000</h1>
       </article>
 
-      <article class="flex flex-col min-h-24 max-w-28 justify-between
-      rounded-xl cursor-pointer active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2">
-        <img src="image/pepsi.png" alt="Roast Chicken" class="min-h-16">
-        <h2 class="text-[#2B2B2B] font-sans text-center">Pepsi</h2>
-        <h1 class="text-center text-2xl">N 300</h1>
+       <article class=" flex flex-col min-h-24 w-28 justify-evenly  hover:bg-[#F6F1E8] hover:shadow-2xl
+      rounded-xl cursor-pointer active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] px-3 py-2 hover:underline
+      lg:w-[420px] lg:h-[450px] md:w-80 md:h-[450px]">
+        <img src="image/pepsi.png" alt="Roast Chicken" class="min-h-16 rounded-2xl
+        lg:h-60 md:h-52">
+        <div class="h-16  flex flex-col justify-center">
+          <h2 class="text-[#2B2B2B] font-sans text-center
+          lg:text-3xl md:text-2xl">
+          Pepsi drinks</h2></div>
+        <h1 class="text-center text-xl lg:text-2xl ">N 300</h1>
       </article>
+      </div>
+      <div class="  w-full flex flex-row justify-end"> 
+        <a href="#hhh">
+          <button class=" w-28 h-10 text-2xl lg:text-3xl  lg:w-32 lg:h-12 cursor-pointer text-center
+           hover:bg-[#F6F1E8] hover:shadow-2xl active:shadow-2xs   rounded-4xl shadow-gray-600">
+           More>></button>
+        </a>
       </div>
     </section>
      <br>
     <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
-  </main>
-
+  </main> 
   <!--//main content -->
 
-  <section class="py-2.5 flex flex-col">
+  <!-- About -->
+  <section class="py-2.5 flex flex-col ">
     <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-3xl underline">About Us</h1>
       <br>
     <div class="flex flex-row items-center">
-      <h2>
+
+       <!-- mobile view-->
+      <h2 class="lg:hidden">
       At Fresh-Bite, we bring farm-fresh ingredients straight to your plate. 
       Our chefs partner with local farmers and artisans to craft dishes that 
       highlight natural flavors from crisp vegetables and fragrant herbs to 
@@ -92,37 +137,84 @@
       refined dining experience that reconnects you with the land, the farmers, and the
       ingredients that make every meal extraordinary.
 
-      <br>
-      <br>
+      <br><br>
 
         <img src="image/restaurant.png" alt="">
         <br><br>
       </h2>
+        <!--// mobile view -->
+  
+        <!-- laptop view -->
+      <h2 class="lg:block hidden">
+        At Fresh-Bite, we bring farm-fresh ingredients straight to your plate, creating a 
+        dining experience that celebrates the very best of what nature has to offer. 
+        Our passionate chefs partner directly with local farmers, artisan producers, 
+        and sustainable fisheries to craft dishes that highlight the pure, natural 
+        flavors of each season. From crisp, just-picked vegetables and fragrant garden
+        herbs to ethically raised meats and responsibly sourced seafood, every ingredient 
+        tells a story of dedication, craftsmanship, and respect for the land.
+        Our thoughtfully curated menu seamlessly blends the vibrant bounty of local produce
+        with the refined techniques of fine dining, striking a perfect balance between taste,
+        texture, and presentation in every single bite. We believe that exceptional food
+        begins with exceptional ingredients, which is why we visit our partner farms 
+        personally, selecting only the freshest harvests at their peak ripeness.
+        Our signature herb-roasted chicken, marinated in a blend of rosemary, 
+        thyme, and lemon from nearby herb gardens, has become a beloved 
+        favorite among our guests. Our vibrant seafood paella, brimming
+        with saffron-infused rice and the day's freshest catch from 
+        sustainable coastal fisheries, transports diners to the Mediterranean
+        with every spoonful. From delicate starters to indulgent desserts, 
+        we create meals that are not only deeply nourishing but also truly memorable.
+        Beyond the plate, Fresh-Bite is deeply committed to sustainability, uncompromising 
+        quality, and authentic culinary traditions. We minimize food waste through creative
+        kitchen practices, compost all organic scraps, and use eco-friendly packaging for 
+        our takeaway offerings. Our dining space reflects these values—warm, inviting, and
+        refined, with natural wood accents, living herb walls, and soft ambient lighting 
+        that creates an atmosphere of relaxed elegance. Whether you're joining us for an 
+        intimate dinner, a celebratory gathering, or a casual lunch with friends, 
+        Fresh-Bite offers a dining experience that reconnects you with the land, 
+        honors the hardworking farmers who make it possible, and celebrates the 
+        incredible ingredients that transform every meal into something extraordinary.
+        Come taste the difference that true freshness makes.
+
+      <img src="image/restaurant.png" alt="" class="hidden lg:block h-[640px] w-full">
+      </h2>
+       <!--// laptop view -->
     </div>
+    <br><br>
     <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
   </section>
+  <!-- //About -->
 
-  <section class="py-2.5 flex flex-col">
-    <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-3xl underline text-center">Contact Us</h1>
+  <section class="py-2.5 flex flex-col ">
+    <h1 class="text-[#2B2B2B] font-[Playfair_Display] text-3xl underline text-center lg:text-5xl">Contact Us</h1>
       <br>
     <div class="flex flex-row items-center justify-evenly">
 
-      <article class="flex flex-col min-h-28 max-w-32 py-3 px-4  justify-between cursor-pointer rounded-xl
-      active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a]">
-        <i class="text-[#2B2B2B] fa-solid fa-phone text-4xl text-center"></i>
+      <article class="flex flex-col min-h-28 w-32 px-4 justify-evenly  cursor-pointer rounded-xl
+      active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] hover:bg-[#F6F1E8] hover:shadow-2xl
+       lg:w-56 lg:h-56">
+        <i class="text-[#2B2B2B] fa-solid fa-phone text-4xl text-center
+        lg:text-6xl"></i>
         <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
-        <h2 class="text-[#2B2B2B] font-sans text-center text-xl">CALL US</h2>
+        <h2 class="text-[#2B2B2B] font-sans text-center text-xl
+        lg:text-2xl hover:underline">CALL US</h2>
       </article>
 
-      <article class="flex flex-col min-h-28 max-w-32 py-3 px-3 justify-between cursor-pointer 
-      rounded-xl active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a]">
-        <i class="text-[#2B2B2B] fa-solid fa-envelope text-4xl text-center"></i>
+      <div>
+      <article class="group flex flex-col min-h-28 w-32  px-3 justify-evenly cursor-pointer rounded-xl
+      active:bg-[#F6F1E8] active:shadow-2xs active:shadow-[#4a4a4a] hover:bg-[#F6F1E8] hover:shadow-2xl 
+      lg:w-56 lg:h-56">
+        <i class="text-[#2B2B2B] fa-solid fa-envelope text-4xl text-center
+        lg:text-6xl lg:group-hover:no-underline"></i>
         <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
-        <h2 class="text-[#2B2B2B] font-sans text-center text-xl">EMAIL US</h2>
+        <h2 class="text-[#2B2B2B] font-sans text-center text-xl
+        lg:text-2xl ">EMAIL US</h2>
       </article>
       </div>
 
-      <br><br>
+      </div>
+      <br>
 
       <div class="bg-[#2b2b2b51] h-[0.2px] w-full"></div>
   </section>
@@ -131,7 +223,7 @@
   <footer>
     <section class="flex flex-col min-h-24 justify-evenly ">
 
-     <h1 class="text-3xl underline text-[#2B2B2B] font-[Playfair_Display] ">Help</h1>
+     <h1 class="text-3xl underline text-[#2B2B2B] font-[Playfair_Display] lg:text-5xl ">Help</h1>
 
      <div class="flex flex-col justify-evenly py-4  min-h-[480px]">
 
@@ -155,7 +247,7 @@
      </div>
 
     </section>
-    <p>&copy; 2024 Fresh-Bite. All rights reserved.</p>
+    <p>&copy; 2026 Fresh-Bite. All rights reserved.</p>
   </footer>
 
 </body>
